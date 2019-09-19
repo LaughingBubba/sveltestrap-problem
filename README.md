@@ -1,16 +1,11 @@
 # Problem
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+```svltestrap``` components don't want to play nicely with ```svelte-routing``` navigate function.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
+When implementating a ```javascript on:click={() => navigate("/some-url")}``` scenario, the script crashes with opaque message like:
 ```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+19:55:56.734 TypeError: os is undefined sveltestrap.es.js:1:392
 ```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
 
 ## Replicating the problem
 
@@ -23,4 +18,12 @@ npm install
 npm run dev
 ```
 
-Follow the instructions on ther home page.
+Follow the instructions on the home page and click on the yellow button to see the problem occuring.
+
+Then stop the dev server, checkout the ```plain-bs4``` branch and start the dev server again.
+
+Follow the instructions on the home page and click on the GREEN button to see the NO problem occuring and the page navigation to the ```/hello``` url as expected.
+
+NB1: This is because the button is a plain HTML button styled using BS4
+
+NB2: Flip back to the master branch and uncomment the HTML button in the ```Home.svelte``` component and that too will fail. Smells like an event bubbling problem.
