@@ -2,10 +2,11 @@
 
 ```svltestrap``` components don't want to play nicely with ```svelte-routing``` navigate function.
 
-When implementating a 
+When implementating a scenario like:
 ```javascript 
-on:click={() => navigate("/some-url")}``` 
-scenario, the script crashes with opaque message like:
+on:click={() => navigate("/some-url")}
+``` 
+the script crashes with opaque message like:
 ```bash
 19:55:56.734 TypeError: os is undefined sveltestrap.es.js:1:392
 ```
