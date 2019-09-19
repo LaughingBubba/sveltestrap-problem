@@ -5,7 +5,7 @@
 <ul>
     <li>Open the console before clicking on the button below ...</li>
 </ul>
-<Button color='warning' on:click={()=>navigate('/hello')} >Say Hello</Button>
+<button type="button" class="btn btn-success" on:click={()=>navigate('/hello')} >Say Hello</button>
 
 <script>
 
