@@ -3,7 +3,7 @@
 <p>Welcome to this sample code!</p>
 <p>Things to try:</p>
 <ul>
-    <li>Navigate around with ... Yadda yadda yadda</li>
+    <li>Open the console before clicking on the button below ...</li>
 </ul>
 <Button color='warning' on:click={()=>navigate('/hello')} >Say Hello</Button>
 
