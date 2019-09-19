@@ -2,7 +2,8 @@
 
 ```svltestrap``` components don't want to play nicely with ```svelte-routing``` navigate function.
 
-When implementating a ```javascript 
+When implementating a 
+```javascript 
 on:click={() => navigate("/some-url")}``` 
 scenario, the script crashes with opaque message like:
 ```bash
