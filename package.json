@@ -11,7 +11,7 @@
     "rollup-plugin-terser": "^4.0.4",
     "svelte": "^3.0.0",
     "svelte-routing": "^1.4.0",
-    "sveltestrap": "^3.1.1"
+    "sveltestrap": "^3.1.2-1"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"
